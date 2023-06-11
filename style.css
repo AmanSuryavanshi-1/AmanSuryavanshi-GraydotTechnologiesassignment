@@ -132,6 +132,10 @@ body {
   }
 
   @media screen and (max-width: 1000px) {
+    body{
+      font-size:60px;
+      font-weight: 500;
+    }
     .container-wrapper {
       padding-top: 20px;
       
