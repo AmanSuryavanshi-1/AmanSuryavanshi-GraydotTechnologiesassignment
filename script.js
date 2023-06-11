@@ -17,11 +17,10 @@ function drop(event) {
   event.target.appendChild(draggableElement);
   draggableElement.style.opacity = "1";
   document.getElementById("successMessage").style.display = "block";
-  setTimeout(function() {
+  setTimeout(function () {
     document.getElementById("successMessage").style.display = "none";
   }, 1000); // Hide the delete message after 1 second
   document.getElementById("dropText").style.display = "none"; // Hide the drop text
-
 }
 // Function to handle delete item event
 function deleteItem(event) {
@@ -29,7 +28,7 @@ function deleteItem(event) {
   var container = item.parentNode;
   container.removeChild(item);
   document.getElementById("deleteMessage").style.display = "block";
-  setTimeout(function() {
+  setTimeout(function () {
     document.getElementById("deleteMessage").style.display = "none";
   }, 1000); // Hide the delete message after 1 second
 }
@@ -46,7 +45,6 @@ function resetContainers() {
   var successMessage = document.getElementById("successMessage");
   successMessage.style.display = "none";
   while (secondContainer.firstChild) {
-      firstContainer.appendChild(secondContainer.firstChild);
+    firstContainer.appendChild(secondContainer.firstChild);
   }
 }
-
